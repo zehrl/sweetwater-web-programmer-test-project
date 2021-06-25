@@ -18,6 +18,7 @@
         <tr>
             <th>orderid</th>
             <th>comments</th>
+            <th>shipdate_expected</th>
         </tr>
         <tr>
             <!-- Insert Tables from queries -->
@@ -31,7 +32,7 @@
 
                 // output data of each row
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "<td><tr>";
+                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "</td><td>" . $row["shipdate_expected"] . "</td><tr>";
                 }
             } else {
                 echo "0 results";
@@ -49,6 +50,7 @@
         <tr>
             <th>orderid</th>
             <th>comments</th>
+            <th>shipdate_expected</th>
         </tr>
         <tr>
             <!-- Insert Tables from queries -->
@@ -62,7 +64,7 @@
 
                 // output data of each row
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "<td><tr>";
+                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "</td><td>" . $row["shipdate_expected"] . "</td><tr>";
                 }
             } else {
                 echo "0 results";
@@ -81,6 +83,7 @@
         <tr>
             <th>orderid</th>
             <th>comments</th>
+            <th>shipdate_expected</th>
         </tr>
         <tr>
             <!-- Insert Tables from queries -->
@@ -94,7 +97,7 @@
 
                 // output data of each row
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "<td><tr>";
+                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "</td><td>" . $row["shipdate_expected"] . "</td><tr>";
                 }
             } else {
                 echo "0 results";
@@ -112,6 +115,7 @@
         <tr>
             <th>orderid</th>
             <th>comments</th>
+            <th>shipdate_expected</th>
         </tr>
         <tr>
             <!-- Insert Tables from queries -->
@@ -125,7 +129,7 @@
 
                 // output data of each row
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "<td><tr>";
+                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "</td><td>" . $row["shipdate_expected"] . "</td><tr>";
                 }
             } else {
                 echo "0 results";
@@ -143,6 +147,7 @@
         <tr>
             <th>orderid</th>
             <th>comments</th>
+            <th>shipdate_expected</th>
         </tr>
         <tr>
             <!-- Insert Tables from queries -->
@@ -160,7 +165,7 @@
 
                 // output data of each row
                 while ($row = $result->fetch_assoc()) {
-                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "<td><tr>";
+                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "</td><td>" . $row["shipdate_expected"] . "</td><tr>";
                 }
             } else {
                 echo "0 results";

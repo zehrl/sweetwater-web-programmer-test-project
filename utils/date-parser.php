@@ -44,13 +44,13 @@ function update_shipdate_expected($arr)
 
     // Update shipdate_expected
     if ($conn -> query($query) === TRUE) {
-        echo "Record updated successfully";
+        // echo "Record updated successfully";
     } else {
         echo "Error updating record: " . $conn->error;
     }
 
-    echo "query: " . $query . "<br>";
-    echo "---------------------------<br>";
+    // echo "query: " . $query . "<br>";
+    // echo "---------------------------<br>";
 }
 
 if ($result->num_rows > 0) {
@@ -65,5 +65,5 @@ if ($result->num_rows > 0) {
         // echo "<br>-------------------------------------------<br>";
     }
 } else {
-    echo "0 results";
+    // echo "0 results";
 }

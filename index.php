@@ -7,6 +7,6 @@ include "./utils/connection.php";
 include "./utils/date-parser.php";
 
 // Views
-// include "./views/report.php";
+include "./views/report.php";
 
 ?>
