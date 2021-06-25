@@ -109,6 +109,38 @@
 
     </table>
 
+    <h2>Signature Query</h2>
+    <p>Shows customer orders that mention "sign."</p>
+    <table>
+        <tr>
+            <th>orderid</th>
+            <th>comments</th>
+        </tr>
+        <tr>
+            <!-- Insert Tables from queries -->
+
+            <!-- Call Me Query -->
+            <?php
+            $query = "SELECT * FROM sweetwater.sweetwater_test WHERE comments like '% sign%';";
+            $result = $conn->query($query);
+
+            if ($result->num_rows > 0) {
+
+                // output data of each row
+                while ($row = $result->fetch_assoc()) {
+                    echo "<tr><td>" . $row["orderid"] . "</td><td>" . $row["comments"] . "<td><tr>";
+                }
+            } else {
+                echo "0 results";
+            }
+
+            // mysqli_close($conn);
+            ?>
+
+        </tr>
+
+    </table>
+
 </body>
 
 </html>
