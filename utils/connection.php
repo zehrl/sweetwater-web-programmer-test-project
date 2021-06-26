@@ -4,11 +4,12 @@
 include "environment.php";
 
 // Connect to Local MySQL Database
-$servername = $_ENV["LOCAL_SERVER_NAME"];
-$username = $_ENV["LOCAL_SERVER_USERNAME"];
-$password = $_ENV["LOCAL_SERVER_PASSWORD"];
+$servername = $_ENV["SERVER_NAME"];
+$username = $_ENV["SERVER_USERNAME"];
+$password = $_ENV["SERVER_PASSWORD"];
+$database = $_ENV["DB_NAME"];
 
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username, $password, $database);
 
 // Check connection
 if ($conn->connect_error) {
