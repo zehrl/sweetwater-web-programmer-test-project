@@ -4,10 +4,10 @@
 include "environment.php";
 
 // Connect to Local MySQL Database
-// $servername = getenv("SERVER_NAME");
-// $username = getenv("SERVER_USERNAME");
-// $password = getenv("SERVER_PASSWORD");
-// $database = getenv("DB_NAME");
+$servername = getenv('SERVER_NAME');
+$username = getenv('SERVER_USERNAME');
+$password = getenv('SERVER_PASSWORD');
+$database = getenv('DB_NAME');
 
 $conn = new mysqli($servername, $username, $password, $database);
 
