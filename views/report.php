@@ -21,11 +21,9 @@
             <th>shipdate_expected</th>
         </tr>
         <tr>
-            <!-- Insert Tables from queries -->
-
             <!-- Candy Query -->
             <?php
-            $query = "SELECT * FROM sweetwater.sweetwater_test WHERE comments like '%candy%';";
+            $query = "SELECT * FROM sweetwater_test WHERE comments like '%candy%';";
             $result = $conn->query($query);
 
             if ($result->num_rows > 0) {
@@ -53,11 +51,9 @@
             <th>shipdate_expected</th>
         </tr>
         <tr>
-            <!-- Insert Tables from queries -->
-
             <!-- Call Me Query -->
             <?php
-            $query = "SELECT * FROM sweetwater.sweetwater_test WHERE comments like '%call me%';";
+            $query = "SELECT * FROM sweetwater_test WHERE comments like '%call me%';";
             $result = $conn->query($query);
 
             if ($result->num_rows > 0) {
@@ -86,11 +82,9 @@
             <th>shipdate_expected</th>
         </tr>
         <tr>
-            <!-- Insert Tables from queries -->
-
             <!-- Call Me Query -->
             <?php
-            $query = "SELECT * FROM sweetwater.sweetwater_test WHERE comments like '%referred%';";
+            $query = "SELECT * FROM sweetwater_test WHERE comments like '%referred%';";
             $result = $conn->query($query);
 
             if ($result->num_rows > 0) {
@@ -118,11 +112,9 @@
             <th>shipdate_expected</th>
         </tr>
         <tr>
-            <!-- Insert Tables from queries -->
-
             <!-- Call Me Query -->
             <?php
-            $query = "SELECT * FROM sweetwater.sweetwater_test WHERE comments like '% sign%';";
+            $query = "SELECT * FROM sweetwater_test WHERE comments like '% sign%';";
             $result = $conn->query($query);
 
             if ($result->num_rows > 0) {
@@ -150,11 +142,9 @@
             <th>shipdate_expected</th>
         </tr>
         <tr>
-            <!-- Insert Tables from queries -->
-
             <!-- Call Me Query -->
             <?php
-            $query = "SELECT * FROM sweetwater.sweetwater_test
+            $query = "SELECT * FROM sweetwater_test
             WHERE comments not like '% sign%' AND
             comments not like '% referred%' AND
             comments not like '% call me%' AND

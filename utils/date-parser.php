@@ -2,7 +2,7 @@
 
 // Query Database for Entries with "Expected Ship Date" in comments section
 $query = "SELECT orderid, comments 
-    FROM sweetwater.sweetwater_test
+    FROM sweetwater_test
     WHERE comments like '%Expected Ship Date: __/__/__%' AND
     shipdate_expected IS NULL";
 
@@ -40,7 +40,7 @@ function update_shipdate_expected($arr)
 
     global $conn;
 
-    $query = "UPDATE sweetwater.sweetwater_test SET shipdate_expected = '" . $arr["shipdate_expected"] . "' WHERE orderid = '" . $arr["orderid"] . "';";
+    $query = "UPDATE sweetwater_test SET shipdate_expected = '" . $arr["shipdate_expected"] . "' WHERE orderid = '" . $arr["orderid"] . "';";
 
     // Update shipdate_expected
     if ($conn -> query($query) === TRUE) {
